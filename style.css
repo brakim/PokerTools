@@ -59,9 +59,6 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 body {
-    tab-size: 4;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
@@ -71,8 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 2rem 2rem;
     color: rgb(248 250 252 / var(--tw-text-opacity));
     background-color: rgb(15 23 42 / var(--tw-bg-opacity));
     
@@ -88,7 +84,7 @@ body {
     width: 100%;
     max-width: 768px;
     align-self: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .relative-2 {
