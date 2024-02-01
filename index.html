@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PokerTools</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="app.js"></script>
-  </body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="relative-1" id="flip-counter">
+        <div class="app-shadow-1"></div>
+        <div class="app-shadow-2"></div>
+        <div class="relative-2">
+            <div class="app-shadow-3"></div>
+            <div class="app-shadow-4"></div>
+            <h1>Flip Counter</h1>
+
+            <div id="flip-percentage">0%</div>
+            <div id="flip-result" class="counter">
+                <span class="wins">0 wins</span> / <span class="losses">0 losses</span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-type="win" class="flip-button win">WIN</button>
+                <button type="button" data-type="loose" class="flip-button loose">LOOSE</button>
+                <button type="button" data-type="reset" class="flip-button reset">RESET</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="relative-1" id="randomize-box">
+        <div class="app-shadow-1"></div>
+        <div class="app-shadow-2"></div>
+        <div class="relative-2">
+            <div class="app-shadow-3"></div>
+            <div class="app-shadow-4"></div>
+            <h1>Randomize</h1>
+
+            <div id="randomize-result" class="counter">
+                Feeling lucky?
+            </div>
+            <div class="range">
+                <input type="range" min="1" max="100" value="50" step="1" id="rand-input" />
+            </div>
+            <div class="buttons">
+                <button type="button" id="rand-button" class="win">Randomize</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
